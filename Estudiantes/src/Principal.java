@@ -37,18 +37,18 @@ public class Principal {
 		}
 
 		double max = a[0].getCalificacion();
-
+		String estudiante = "";
+		long CC = 0;
+		
 		for(int k = 0; k < a.length; k++) {
-
+			
 			if(a[k].getCalificacion() > max) {
 				max = a[k].getCalificacion();
-
+				estudiante = a[k].getNombre();
+				CC = a[k].getCedula();
 			}
 		}
-		System.out.println("La nota mayor fue: " + max);
+		System.out.println("La nota mayor fue: " + max + "," + " del estudiante : " + estudiante + "," + " con numero de cedula " + CC + "." );
 
 	}
 }
-
-
-
